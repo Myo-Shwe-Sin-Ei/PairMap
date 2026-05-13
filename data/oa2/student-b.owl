@@ -1,0 +1,1201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/"
+     xml:base="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:msse="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/">
+        <dc:creator>Myo Shwe Sin Ei</dc:creator>
+        <rdfs:label>Wine Quality Review Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altlabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altlabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/contains">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn"/>
+        <rdfs:comment>relation between grape variety and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasOrigin">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/isOriginOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+        <rdfs:comment>relation between wine region/ sub-region and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasRated -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasRated">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ratedBy"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:comment>relation between review and taster</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasReview">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/reviewOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:comment>relation between review and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/isOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/isOriginOf">
+        <rdfs:comment>relation between wine region/ sub-region and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn">
+        <rdfs:comment>relation between two geographic areas</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/usedIn"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+        <rdfs:comment>relation between grape variety and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/producedBy">
+        <owl:inverseOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/produces"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        <rdfs:comment>relation between winery and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/produces">
+        <rdfs:comment>relation between winery and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ratedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <rdfs:comment>relation between review and taster</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/reviewOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/reviewOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>relation between winery and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/usedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/usedIn">
+        <rdfs:comment>relation between grape variety and wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>tasting note and description of the wine in the review</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasDesignation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasDesignation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A specific name or label given to a wine by the winery</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>full name of the taster</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>price of wine in US currency</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>score (points) rated to the wine on the scale of 80-100 in the review</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>full title of the wine as listed in the review</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasTwitter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasTwitter">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>twitter handle of the taster</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+        <rdfs:comment>Two or more grape varieties combined</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+        <rdfs:comment>A country where wine is produced</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ExcellentQuality -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ExcellentQuality">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasScore"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:comment>A wine quality scored between 90-94 points, classified as excellent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea">
+        <rdfs:comment>A geographic location of wine production</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GoodQuality -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GoodQuality">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasScore"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:comment>A wine quality scored between 80-89 points, classified as good</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety">
+        <rdfs:comment>A variety of grape used in wine making</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HighPrice -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HighPrice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:comment>A wine priced over $50</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LowPrice -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LowPrice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:comment>A wine priced under $15</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MadeiraBlendVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MadeiraBlendVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety"/>
+        <rdfs:comment>Made from unique or unknown origin grape varities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MidPrice -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MidPrice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:comment>A wine priced between $15 and $50</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MixedBlendVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MixedBlendVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety"/>
+        <rdfs:comment>Two or more red and white grape varieties combined</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/OutstandingQuality -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/OutstandingQuality">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasScore"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <rdfs:comment>A wine quality scored between 95-100 points, classified as outstanding</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A state, province or administrative region within a country where wine is produced</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedBlendVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedBlendVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety"/>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety"/>
+        <rdfs:comment>Two or more red grape varieties combined</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+        <owl:disjointWith rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety"/>
+        <rdfs:comment>A grape variety used to produce red wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom"/>
+                        <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+        <rdfs:comment>A wine made from red grape varieties</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RoseWine -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RoseWine">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+        <rdfs:comment>A wine with pink colour, has taste between red and white wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SparklingWine -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SparklingWine">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A wine with significant carbonation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SubRegion -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SubRegion">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specific region or area of wine production within a province, which is within United States</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster">
+        <rdfs:comment>A person who tastes wines, writes wine reviews and gives scores</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BlendVariety"/>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+        <rdfs:comment>A grape variety used to produce white wines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteWine -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteWine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom"/>
+                        <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType"/>
+        <rdfs:comment>A wine made from white grape varieties</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/madeFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/producedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An alcoholic beverage produced from fermented grapes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specific region or area of wine production within a province, which is within a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ratedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/reviewOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A taster&apos;s review of a specific wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+        <rdfs:comment>The type of a wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/locatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An establishment of wine production</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AlexanderValley -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AlexanderValley">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SubRegion"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sonoma"/>
+        <skos:altlabel>Alexander Valley</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AnnaLeeCIijima -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AnnaLeeCIijima">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <hasName>Anna Lee C. Iijima</hasName>
+        <skos:altlabel>Anna Lee C. Iijima</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy"/>
+        <skos:altlabel>Baglio di Pianetto</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto2007FicilignoWhiteSicilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto2007FicilignoWhiteSicilia">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteWine"/>
+        <hasOrigin rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sicilia"/>
+        <hasReview rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfBaglioDiPianetto2007FicilignoWhiteSicilia"/>
+        <madeFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety"/>
+        <producedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto"/>
+        <hasDesignation>Ficiligno</hasDesignation>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.0</hasPrice>
+        <hasTitle>Baglio di Pianetto 2007 Ficiligno White (Sicilia)</hasTitle>
+        <skos:altlabel>Baglio di Pianetto 2007 Ficiligno White (Sicilia)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety"/>
+        <skos:altlabel>Cabernet Sauvignon</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/California -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/California">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US"/>
+        <rdfs:label>California</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Frappato -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Frappato">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedGrapeVariety"/>
+        <rdfs:label>Frappato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Germany">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+        <rdfs:label>Germany</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Gewürztraminer -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Gewürztraminer">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteGrapeVariety"/>
+        <rdfs:label>Gewürztraminer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Rheinhessen"/>
+        <skos:altlabel>Heinz Eifel</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel2013ShineGewürztraminerRheinhessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel2013ShineGewürztraminerRheinhessen">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteWine"/>
+        <hasReview rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfHeinzEifel2013ShineGewürztraminerRheinhessen"/>
+        <madeFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Gewürztraminer"/>
+        <producedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel"/>
+        <hasDesignation>Shine</hasDesignation>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</hasPrice>
+        <hasTitle>Heinz Eifel 2013 Shine Gewürztraminer (Rheinhessen)</hasTitle>
+        <skos:altlabel>Heinz Eifel 2013 Shine Gewürztraminer (Rheinhessen)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+        <rdfs:label>Italy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <hasName>Kerin O&apos;Keefe</hasName>
+        <hasTwitter>@kerinokeefe</hasTwitter>
+        <skos:altlabel>Kerin O&apos;Keefe</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US"/>
+        <skos:altlabel>Louis M. Martini</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini2012CabernetSauvignonAlexanderValley -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini2012CabernetSauvignonAlexanderValley">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine"/>
+        <hasOrigin rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AlexanderValley"/>
+        <hasReview rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfLouisMMartini2012CabernetSauvignonAlexanderValley"/>
+        <madeFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon"/>
+        <producedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.0</hasPrice>
+        <hasTitle>Louis M. Martini 2012 Cabernet Sauvignon (Alexander Valley)</hasTitle>
+        <skos:altlabel>Louis M. Martini 2012 Cabernet Sauvignon (Alexander Valley)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfBaglioDiPianetto2007FicilignoWhiteSicilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfBaglioDiPianetto2007FicilignoWhiteSicilia">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <ratedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe"/>
+        <hasDescription>Delicate aromas recall white flower and citrus. The palate offers passion fruit, lime and white peach with a hint of mineral alongside bright acidity.</hasDescription>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasScore>
+        <skos:altlabel>Review Of Baglio di Pianetto 2007 Ficiligno White Sicilia</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfHeinzEifel2013ShineGewürztraminerRheinhessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfHeinzEifel2013ShineGewürztraminerRheinhessen">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <ratedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AnnaLeeCIijima"/>
+        <hasDescription>Savory drive thyme notes accent sunnier falvors of preserved peach in this brisk, off-dry wine. It&apos;s fruity and fresh, with an elegant, sprightly footprint.</hasDescription>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasScore>
+        <skos:altlabel>Review of HeinzEifel 2013 Shine Gewürztraminer (Rheinhessen)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfLouisMMartini2012CabernetSauvignonAlexanderValley -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfLouisMMartini2012CabernetSauvignonAlexanderValley">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <ratedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/VirginieBoone"/>
+        <hasDescription>Slightly reduced, this wine offers a chalky, tannic backbone to an otherwise juicy explosion of rich black cherry, the whole accented throughout by firm oak and cigar box.</hasDescription>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasScore>
+        <skos:altlabel>Review Of Louis M. Martini 2012 Cabernet Sauvignon (Alexander Valley)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfTerreDiGiurfo2013BelsitoFrappatoVictoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfTerreDiGiurfo2013BelsitoFrappatoVictoria">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+        <ratedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe"/>
+        <hasDescription>Here&apos;s a bright, informal red that opens with aromas of candied berry, white pepper and savory herb that carry over to the palate. It&apos;s balanced with fresh acidity and soft tannins.</hasDescription>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasScore>
+        <skos:altlabel>Review Of Terre Di Giurfo 2013 Belsito Frappato (Victoria)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Rheinhessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Rheinhessen">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Germany"/>
+        <rdfs:label>Rheinhessen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sicilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sicilia">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia"/>
+        <rdfs:label>Sicilia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy"/>
+        <skos:altlabel>Sicily and Sardinia</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sonoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sonoma">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/California"/>
+        <rdfs:label>Sonoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy"/>
+        <skos:altlabel>Terre di Giurfo</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo2013BelsitoFrappatoVictoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo2013BelsitoFrappatoVictoria">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine"/>
+        <hasOrigin rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Vittoria"/>
+        <hasReview rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfTerreDiGiurfo2013BelsitoFrappatoVictoria"/>
+        <madeFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Frappato"/>
+        <producedBy rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo"/>
+        <hasDesignation>Belsito</hasDesignation>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</hasPrice>
+        <hasTitle>Terre di Giurfo 2013 Belsito Frappato (Victoria)</hasTitle>
+        <skos:altlabel>Terre di Giurfo 2013 Belsito Frappato (Victoria)</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+        <skos:altlabel>United States</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/VirginieBoone -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/VirginieBoone">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+        <hasName>Virginie Boone</hasName>
+        <hasTwitter>@vboone</hasTwitter>
+        <skos:altlabel>Virginie Boone</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Vittoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Vittoria">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion"/>
+        <locatedIn rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia"/>
+        <rdfs:label>Vittoria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety">
+        <rdfs:comment>Two or more white grape varieties combined</rdfs:comment>
+        <skos:altlabel>White Blend</skos:altlabel>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SubRegion"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineRegion"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ExcellentQuality"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GoodQuality"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/OutstandingQuality"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GeographicArea"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineReview"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Winery"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HighPrice"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LowPrice"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MidPrice"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MadeiraBlendVariety"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/MixedBlendVariety"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedBlendVariety"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RoseWine"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteWine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AnnaLeeCIijima"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/BaglioDiPianetto2007FicilignoWhiteSicilia"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/California"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Frappato"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Germany"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Gewürztraminer"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel2013ShineGewürztraminerRheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini2012CabernetSauvignonAlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfBaglioDiPianetto2007FicilignoWhiteSicilia"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfHeinzEifel2013ShineGewürztraminerRheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfLouisMMartini2012CabernetSauvignonAlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfTerreDiGiurfo2013BelsitoFrappatoVictoria"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Rheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sicilia"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sonoma"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo2013BelsitoFrappatoVictoria"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/VirginieBoone"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Vittoria"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WhiteBlendVariety"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/AnnaLeeCIijima"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/California"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Frappato"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Germany"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Gewürztraminer"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/HeinzEifel2013ShineGewürztraminerRheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Italy"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/KerinOKeefe"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/LouisMMartini2012CabernetSauvignonAlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfHeinzEifel2013ShineGewürztraminerRheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfLouisMMartini2012CabernetSauvignonAlexanderValley"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/ReviewOfTerreDiGiurfo2013BelsitoFrappatoVictoria"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Rheinhessen"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SicilyAndSardinia"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Sonoma"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/TerreDiGiurfo2013BelsitoFrappatoVictoria"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/US"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/VirginieBoone"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Vittoria"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

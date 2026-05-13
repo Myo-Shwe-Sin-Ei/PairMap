@@ -1,0 +1,5 @@
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept338> <http://www.w3.org/2002/07/owl#sameAs> <https://ark.frantiq.fr/ark:/26678/pcrtF9P4mbuyGk> .
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept341> <http://www.w3.org/2002/07/owl#sameAs> <https://ark.frantiq.fr/ark:/26678/pcrts62Z2hl4ux> .
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept319> <http://www.w3.org/2002/07/owl#sameAs> <https://ark.frantiq.fr/ark:/26678/pcrtSu7E2Qh0Xv> .
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept387> <http://www.w3.org/2002/07/owl#sameAs> <https://ark.frantiq.fr/ark:/26678/pcrtxKnfzXYMxK> .
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept336> <http://www.w3.org/2002/07/owl#sameAs> <https://ark.frantiq.fr/ark:/26678/pcrthcbe2XySTb> .

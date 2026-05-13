@@ -1,0 +1,4 @@
+<http://cmt#Review> <http://www.w3.org/2002/07/owl#equivalentClass> <http://iasted#Review> .
+<http://cmt#Author> <http://www.w3.org/2002/07/owl#equivalentClass> <http://iasted#Author> .
+<http://cmt#Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://iasted#Person> .
+<http://cmt#Reviewer> <http://www.w3.org/2002/07/owl#equivalentClass> <http://iasted#Reviewer> .

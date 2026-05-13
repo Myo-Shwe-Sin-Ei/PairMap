@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.city.ac.uk/inm713-in3067/2026/Andrew_Nguyen/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.city.ac.uk/inm713-in3067/2026/Andrew_Nguyen/">
+    <Prefix name="" IRI="http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="AndrewNguyen" IRI="file:/C:/Users/Endryu/OneDrive/Desktop/Semantic%20Submission/an"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Andrew Nguyen</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An ontology modelling the wine evaluation domain, focusing on tasting and review process with a production chain perspective. Based on the WineEnthusiast reviews dataset (winemag-data-130k-v2.csv).
+https://www.kaggle.com/datasets/zynicide/wine-reviews</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Wine Evaluation and Production Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI=":Affordable"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Appelation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Classic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Estate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FortifiedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Grape"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Location"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Luxury"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Premium"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PrimaryAppellation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ProfessionalTaster"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Province"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ScoreBand"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ScoredTastingNote"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SparklingWine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":StillWine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SubAppellation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Superb"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Taster"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":UnnamedTaster"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":VeryGood"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":WineCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":WineLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":WineProducer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":assignedBand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":conducts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":crafts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":evaluatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":evaluates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasAppellation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":inPriceTier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":isSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":labelFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":labelledAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":varietyUsedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasFullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasFullTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasPoints"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasProvinceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasRetailPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasSocialHandle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasTastingDescription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Bordeaux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":CabernetSauvignon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":RogerVoss"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI=":creator"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Affordable"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Appelation"/>
+        <Class abbreviatedIRI=":Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Budget"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Classic"/>
+        <Class abbreviatedIRI=":ScoreBand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Estate"/>
+        <Class abbreviatedIRI=":WineProducer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FortifiedWine"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Luxury"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Premium"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PrimaryAppellation"/>
+        <Class abbreviatedIRI=":Appelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ProfessionalTaster"/>
+        <Class abbreviatedIRI=":Taster"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ProfessionalTaster"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI=":conducts"/>
+            <Class abbreviatedIRI=":ScoredTastingNote"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Province"/>
+        <Class abbreviatedIRI=":Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ScoredTastingNote"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ScoredTastingNote"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":assignedBand"/>
+            <Class abbreviatedIRI=":ScoreBand"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ScoredTastingNote"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI=":evaluates"/>
+            <Class abbreviatedIRI=":WineProduct"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SparklingWine"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":StillWine"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SubAppellation"/>
+        <Class abbreviatedIRI=":Appelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Superb"/>
+        <Class abbreviatedIRI=":ScoreBand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":TastingNote"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":conductedBy"/>
+            <Class abbreviatedIRI=":Taster"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":UnnamedTaster"/>
+        <Class abbreviatedIRI=":Taster"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":VeryGood"/>
+        <Class abbreviatedIRI=":ScoreBand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":WineCountry"/>
+        <Class abbreviatedIRI=":Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":WineProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+            <Class abbreviatedIRI=":Grape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":WineProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":madeBy"/>
+            <Class abbreviatedIRI=":WineProducer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":WineProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+            <Class abbreviatedIRI=":Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Affordable"/>
+        <Class abbreviatedIRI=":Budget"/>
+        <Class abbreviatedIRI=":Luxury"/>
+        <Class abbreviatedIRI=":Premium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Classic"/>
+        <Class abbreviatedIRI=":Superb"/>
+        <Class abbreviatedIRI=":VeryGood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":FortifiedWine"/>
+        <Class abbreviatedIRI=":SparklingWine"/>
+        <Class abbreviatedIRI=":StillWine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Grape"/>
+        <Class abbreviatedIRI=":Location"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+        <Class abbreviatedIRI=":ScoreBand"/>
+        <Class abbreviatedIRI=":Taster"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+        <Class abbreviatedIRI=":WineLabel"/>
+        <Class abbreviatedIRI=":WineProducer"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":PrimaryAppellation"/>
+        <Class abbreviatedIRI=":SubAppellation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":PrimaryAppellation"/>
+        <Class abbreviatedIRI=":SubAppellation"/>
+        <Class abbreviatedIRI=":WineCountry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":ProfessionalTaster"/>
+        <Class abbreviatedIRI=":UnnamedTaster"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":PrimaryAppellation"/>
+        <NamedIndividual abbreviatedIRI=":Bordeaux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Grape"/>
+        <NamedIndividual abbreviatedIRI=":CabernetSauvignon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":WineProducer"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":StillWine"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":WineCountry"/>
+        <NamedIndividual abbreviatedIRI=":France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":ScoredTastingNote"/>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":ProfessionalTaster"/>
+        <NamedIndividual abbreviatedIRI=":RogerVoss"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+        <NamedIndividual abbreviatedIRI=":Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":CabernetSauvignon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":Bordeaux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":RogerVoss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":evaluates"/>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasFullTitle"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+        <Literal>Chateau La Freynelle 2014 Bordeaux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasRetailPrice"/>
+        <NamedIndividual abbreviatedIRI=":ChateauLaFreynelle2014Bordeaux"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasPoints"/>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasTastingDescription"/>
+        <NamedIndividual abbreviatedIRI=":ReviewChateauLaFreynelle2014Bordeaux"/>
+        <Literal>The wine, unusually 100% Cabernet Sauvignon, is ripe and juicy with some smoky tannins in support. It has a finely perfumed character although touches of extraction give it a bitter edge. That should blow by, leaving an attractive fruity wine.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasFullName"/>
+        <NamedIndividual abbreviatedIRI=":RogerVoss"/>
+        <Literal>Roger Voss</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasSocialHandle"/>
+        <NamedIndividual abbreviatedIRI=":RogerVoss"/>
+        <Literal>@vossroger</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+        <ObjectProperty abbreviatedIRI=":hasAppellation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+        <ObjectProperty abbreviatedIRI=":conducts"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":crafts"/>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+        <ObjectProperty abbreviatedIRI=":varietyUsedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":evaluatedIn"/>
+        <ObjectProperty abbreviatedIRI=":evaluates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":isSourceOf"/>
+        <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":labelFor"/>
+        <ObjectProperty abbreviatedIRI=":labelledAs"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI=":labelledAs"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+        <Class abbreviatedIRI=":Appelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":assignedBand"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":evaluates"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":inPriceTier"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":labelledAs"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":appellationOf"/>
+        <Class abbreviatedIRI=":WineCountry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":assignedBand"/>
+        <Class abbreviatedIRI=":ScoreBand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":conductedBy"/>
+        <Class abbreviatedIRI=":Taster"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":craftsVariety"/>
+        <Class abbreviatedIRI=":Grape"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":evaluates"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":inPriceTier"/>
+        <Class abbreviatedIRI=":PriceTier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":labelledAs"/>
+        <Class abbreviatedIRI=":WineLabel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":madeBy"/>
+        <Class abbreviatedIRI=":WineProducer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":originatesFrom"/>
+        <Class abbreviatedIRI=":Location"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasFullName"/>
+        <Class abbreviatedIRI=":Taster"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasFullTitle"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasPoints"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasProvinceName"/>
+        <Class abbreviatedIRI=":Province"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasRetailPrice"/>
+        <Class abbreviatedIRI=":WineProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasSocialHandle"/>
+        <Class abbreviatedIRI=":Taster"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":hasTastingDescription"/>
+        <Class abbreviatedIRI=":TastingNote"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasFullName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasFullTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasPoints"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasProvinceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasRetailPrice"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasSocialHandle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":hasTastingDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Affordable</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Affordable</AbbreviatedIRI>
+        <Literal>A wine priced between $17 and $42, representing the interquartile range of the dataset (25th-75th percentile).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Affordable</AbbreviatedIRI>
+        <Literal>Affordable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Appelation</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Appelation</AbbreviatedIRI>
+        <Literal>A legally defined and protected wine-growing area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Appelation</AbbreviatedIRI>
+        <Literal>Appellation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Bordeaux</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Bordeaux</AbbreviatedIRI>
+        <Literal>Bordeaux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Budget</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Budget</AbbreviatedIRI>
+        <Literal>A wine priced under $17, in the lowest quartile of the dataset distribution (bottom 25%).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Budget</AbbreviatedIRI>
+        <Literal>Budget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:CabernetSauvignon</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CabernetSauvignon</AbbreviatedIRI>
+        <Literal>Cabernet Sauvignon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ChateauLaFreynelle</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ChateauLaFreynelle</AbbreviatedIRI>
+        <Literal>Chateau La Freynelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ChateauLaFreynelle2014Bordeaux</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ChateauLaFreynelle2014Bordeaux</AbbreviatedIRI>
+        <Literal>Chateau La Freynelle 2014 Bordeaux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Classic</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Classic</AbbreviatedIRI>
+        <Literal>A wine scoring 95-100 points, representing the highest tier of quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Classic</AbbreviatedIRI>
+        <Literal>Classic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Estate</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Estate</AbbreviatedIRI>
+        <Literal>A wine estate that grows its own grapes and produces wine on-site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Estate</AbbreviatedIRI>
+        <Literal>Estate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:FortifiedWine</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:FortifiedWine</AbbreviatedIRI>
+        <Literal>A wine to which a distilled spirit has been added, such as Port or Sherry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FortifiedWine</AbbreviatedIRI>
+        <Literal>Fortified Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:France</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:France</AbbreviatedIRI>
+        <Literal>France</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Grape</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Grape</AbbreviatedIRI>
+        <Literal>A grape variety or blend used in winemaking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Grape</AbbreviatedIRI>
+        <Literal>Grape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Location</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Location</AbbreviatedIRI>
+        <Literal>Geographic location associated with wine productiuon or orgin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Location</AbbreviatedIRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Luxury</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Luxury</AbbreviatedIRI>
+        <Literal>A wine priced above $100, representing the long tail of high-end and collector wines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Luxury</AbbreviatedIRI>
+        <Literal>Luxury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Premium</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Premium</AbbreviatedIRI>
+        <Literal>A wine priced between $42 and $100, above the 75th percentile but below the ultra-premium range.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Premium</AbbreviatedIRI>
+        <Literal>Premium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:PriceTier</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:PriceTier</AbbreviatedIRI>
+        <Literal>A category of the wine by its retail price per bottle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PriceTier</AbbreviatedIRI>
+        <Literal>Price Tier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:PrimaryAppellation</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:PrimaryAppellation</AbbreviatedIRI>
+        <Literal>The main appellation or wine region as listed in the dataset (region_1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PrimaryAppellation</AbbreviatedIRI>
+        <Literal>Primary Appellation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ProfessionalTaster</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:ProfessionalTaster</AbbreviatedIRI>
+        <Literal>A professional wine critic emplyed by a publication such as WineEnthusiast. Must have a name, twitter handle is optional.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ProfessionalTaster</AbbreviatedIRI>
+        <Literal>Professional Taster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Province</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Province</AbbreviatedIRI>
+        <Literal>A state, province or region within a country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Province</AbbreviatedIRI>
+        <Literal>Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ReviewChateauLaFreynelle2014Bordeaux</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ReviewChateauLaFreynelle2014Bordeaux</AbbreviatedIRI>
+        <Literal>Review of Chateau La Freynelle 2014 Bordeaux by Roger Voss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:RogerVoss</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:RogerVoss</AbbreviatedIRI>
+        <Literal>Roger Voss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ScoreBand</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:ScoreBand</AbbreviatedIRI>
+        <Literal>A classifcation tier based on the numeric score assigned during tasting. The dataset score ranges from 80 to 100.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ScoreBand</AbbreviatedIRI>
+        <Literal>Score Band</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:ScoredTastingNote</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:ScoredTastingNote</AbbreviatedIRI>
+        <Literal>A tasting note that includes a numeric score on the 80-100 point scale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ScoredTastingNote</AbbreviatedIRI>
+        <Literal>Scored Tasting Note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:SparklingWine</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:SparklingWine</AbbreviatedIRI>
+        <Literal>A carbonated wine, such as Champagne, Cava, or Prosecco.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SparklingWine</AbbreviatedIRI>
+        <Literal>Sparkling Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:StillWine</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:StillWine</AbbreviatedIRI>
+        <Literal>A non-sparkling wine, the most common type of wine production.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:StillWine</AbbreviatedIRI>
+        <Literal>Still Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:SubAppellation</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:SubAppellation</AbbreviatedIRI>
+        <Literal>A more specific appellation within or in the area of the primary appellation (region_2). Likely to be blank according to the dataset (only 39% of rows) .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SubAppellation</AbbreviatedIRI>
+        <Literal>Sub-Appellation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Superb</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Superb</AbbreviatedIRI>
+        <Literal>A wine scoring 90-94 points, representing excellent quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Superb</AbbreviatedIRI>
+        <Literal>Superb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:Taster</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Taster</AbbreviatedIRI>
+        <Literal>A person who tastes and evaluates wines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Taster</AbbreviatedIRI>
+        <Literal>Taster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:TastingNote</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:TastingNote</AbbreviatedIRI>
+        <Literal>A record of a wine evaluation or a review including description and a score.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:TastingNote</AbbreviatedIRI>
+        <Literal>Tasting note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:UnnamedTaster</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:UnnamedTaster</AbbreviatedIRI>
+        <Literal>Some of the reviews don&apos;t have both a name or a twitter handle. We&apos;re putting those in a different category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:UnnamedTaster</AbbreviatedIRI>
+        <Literal>Unnamed Taster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:VeryGood</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:VeryGood</AbbreviatedIRI>
+        <Literal>A wine scoring 80-89 points, representing good to very good quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:VeryGood</AbbreviatedIRI>
+        <Literal>Very Good</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:WineCountry</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:WineCountry</AbbreviatedIRI>
+        <Literal>A country known for wine production, e.g. France, Italy, Argentina.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:WineCountry</AbbreviatedIRI>
+        <Literal>Wine Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:WineLabel</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:WineLabel</AbbreviatedIRI>
+        <Literal>The specific designation or label name given to a wine by its producer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:WineLabel</AbbreviatedIRI>
+        <Literal>Wine Label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:WineProducer</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:WineProducer</AbbreviatedIRI>
+        <Literal>An entity that produces wine, such as a winery, cooperative, or a negociant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:WineProducer</AbbreviatedIRI>
+        <Literal>Wine Producer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:WineProduct</AbbreviatedIRI>
+        <Literal>A wine that has been produced and is available for evaluation. Central entity of this ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:WineProduct</AbbreviatedIRI>
+        <Literal>Wine Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:appellationOf</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:appellationOf</AbbreviatedIRI>
+        <Literal>Relates an appellation to the wine country it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:appellationOf</AbbreviatedIRI>
+        <Literal>appellation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:assignedBand</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:assignedBand</AbbreviatedIRI>
+        <Literal>Relates a tasting note to the score band classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:assignedBand</AbbreviatedIRI>
+        <Literal>assignedBand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:conductedBy</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:conductedBy</AbbreviatedIRI>
+        <Literal>Relates a tasting note to the taster who conducted the evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:conductedBy</AbbreviatedIRI>
+        <Literal>conducted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:conducts</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:conducts</AbbreviatedIRI>
+        <Literal>Relates a taster to the tasting notes they have produced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:conducts</AbbreviatedIRI>
+        <Literal>conducts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:crafts</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:crafts</AbbreviatedIRI>
+        <Literal>Relates a wine producer to the wine products they craft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:crafts</AbbreviatedIRI>
+        <Literal>crafts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:craftsVariety</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:craftsVariety</AbbreviatedIRI>
+        <Literal>Relates a wine product to the grape variety used to craft it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:craftsVariety</AbbreviatedIRI>
+        <Literal>crafts variety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <AbbreviatedIRI>:creator</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:evaluatedIn</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:evaluatedIn</AbbreviatedIRI>
+        <Literal>Relates a wine product to a tasting note in which it was evaluated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:evaluatedIn</AbbreviatedIRI>
+        <Literal>evaluated in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:evaluates</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:evaluates</AbbreviatedIRI>
+        <Literal>Relates to the tasting note to the wine product it evaluates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:evaluates</AbbreviatedIRI>
+        <Literal>evaluates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasAppellation</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasAppellation</AbbreviatedIRI>
+        <Literal>Relates a wine country to its appellations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasAppellation</AbbreviatedIRI>
+        <Literal>has appellation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasFullName</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasFullName</AbbreviatedIRI>
+        <Literal>The full name of the taster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasFullName</AbbreviatedIRI>
+        <Literal>has full name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasFullTitle</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasFullTitle</AbbreviatedIRI>
+        <Literal>The complete title of the wine product as listed in the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasFullTitle</AbbreviatedIRI>
+        <Literal>has full title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasPoints</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasPoints</AbbreviatedIRI>
+        <Literal>The numeric integer score assigned during tasting, on a scale of 80-100.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasPoints</AbbreviatedIRI>
+        <Literal>has points</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasProvinceName</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasProvinceName</AbbreviatedIRI>
+        <Literal>The name of the province or state associated with the location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasProvinceName</AbbreviatedIRI>
+        <Literal>has province name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasRetailPrice</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasRetailPrice</AbbreviatedIRI>
+        <Literal>The retail price of the wine product in US dollars.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasRetailPrice</AbbreviatedIRI>
+        <Literal>has retail price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasSocialHandle</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasSocialHandle</AbbreviatedIRI>
+        <Literal>The social media handle (e.g. Twitter) of the taster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasSocialHandle</AbbreviatedIRI>
+        <Literal>has social handle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:hasTastingDescription</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasTastingDescription</AbbreviatedIRI>
+        <Literal>The textual tasting description written by the taster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasTastingDescription</AbbreviatedIRI>
+        <Literal>has tasting description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:inPriceTier</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:inPriceTier</AbbreviatedIRI>
+        <Literal>Relates a wine product to its price tier category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:inPriceTier</AbbreviatedIRI>
+        <Literal>in price tier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:isSourceOf</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:isSourceOf</AbbreviatedIRI>
+        <Literal>Relates a location to wine products that originate from it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:isSourceOf</AbbreviatedIRI>
+        <Literal>is source of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:labelFor</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:labelFor</AbbreviatedIRI>
+        <Literal>Relates a wine label to the wine product it identifies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:labelFor</AbbreviatedIRI>
+        <Literal>label for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:labelledAs</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:labelledAs</AbbreviatedIRI>
+        <Literal>Relates a wine product to its specific wine label or designation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:labelledAs</AbbreviatedIRI>
+        <Literal>labelled as</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:madeBy</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:madeBy</AbbreviatedIRI>
+        <Literal>Relates a wine product to the producer who made it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:madeBy</AbbreviatedIRI>
+        <Literal>made by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:originatesFrom</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:originatesFrom</AbbreviatedIRI>
+        <Literal>Relates a wine product to the location it originates from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:originatesFrom</AbbreviatedIRI>
+        <Literal>originates from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AbbreviatedIRI>:varietyUsedIn</AbbreviatedIRI>
+        <Literal>Andrew Nguyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:varietyUsedIn</AbbreviatedIRI>
+        <Literal>Relates a grape variety to the wine products it is used in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:varietyUsedIn</AbbreviatedIRI>
+        <Literal>variety used in</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI=":creator"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
