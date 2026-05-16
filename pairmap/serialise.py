@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
+import csv
 from pathlib import Path
-
 from .types import Mapping
 
 
@@ -25,3 +25,24 @@ def write_alignment(mappings: list[Mapping], out_path: str | Path) -> None:
     for m in mappings:
         lines.append(m.to_turtle_triple())
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+def write_alignment_csv(mappings: list[Mapping], out_path: str | Path) -> None:
+    #Write mappings to a CSV file for spreadsheet inspection
+    path = Path(out_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        writer.writerow([
+            "source_iri", "source_label",
+            "predicate",
+            "target_iri", "target_label",
+            "confidence", "sources",
+        ])
+        for m in mappings:
+            writer.writerow([
+                m.e1.iri, m.e1.raw_label,
+                m.predicate(),
+                m.e2.iri, m.e2.raw_label,
+                f"{m.confidence:.4f}",
+                ",".join(sorted(m.sources)),
+            ])
