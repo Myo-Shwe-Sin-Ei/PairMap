@@ -13,14 +13,13 @@ from pathlib import Path
 from .normalise import fragment_from_iri, normalise
 from .types import Entity, EntityKind
 
-
+#Suppress warnings owlready
 @contextmanager
 def _suppress_owlready_warnings():
-    # Strip '* Owlready2 *' lines from stdout during ontology load
-    
     real_stdout = sys.stdout
+    real_stderr = sys.stderr
 
-    class _Filter:
+    class _StdoutFilter:
         def write(self, msg: str) -> int:
             if "* Owlready2 *" in msg:
                 return len(msg)
@@ -29,13 +28,22 @@ def _suppress_owlready_warnings():
         def flush(self) -> None:
             real_stdout.flush()
 
-    sys.stdout = _Filter()
+    class _StderrSink:
+        def write(self, msg: str) -> int:
+            return len(msg)
+
+        def flush(self) -> None:
+            return None
+
+    sys.stdout = _StdoutFilter()
+    sys.stderr = _StderrSink()
     try:
         yield
     finally:
         sys.stdout = real_stdout
+        sys.stderr = real_stderr
 
-#Suppress warnings
+#Suppress warnings rdflib
 @contextmanager
 def _suppress_rdflib_warnings():
     logger = logging.getLogger("rdflib")
