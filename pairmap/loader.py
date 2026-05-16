@@ -5,6 +5,7 @@
 
 from __future__ import annotations
 
+import logging
 import sys
 from contextlib import contextmanager
 from pathlib import Path
@@ -33,6 +34,17 @@ def _suppress_owlready_warnings():
         yield
     finally:
         sys.stdout = real_stdout
+
+#Suppress warnings
+@contextmanager
+def _suppress_rdflib_warnings():
+    logger = logging.getLogger("rdflib")
+    previous = logger.level
+    logger.setLevel(logging.ERROR)
+    try:
+        yield
+    finally:
+        logger.setLevel(previous)
 
 # Checking labels and synonym annotations
 
@@ -178,7 +190,8 @@ def _load_skos_concepts(path: str | Path) -> list[Entity]:
 
     g = rdflib.Graph()
     try:
-        g.parse(str(path))
+        with _suppress_rdflib_warnings():
+            g.parse(str(path))
     except Exception:
         return []
 
