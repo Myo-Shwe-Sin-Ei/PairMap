@@ -23,7 +23,7 @@ MAPPING_PREDICATES = {
     RDFS.subClassOf,
     RDFS.subPropertyOf,
 }
-
+# Symmetric predicates: (A pred B) ≡ (B pred A)
 SYMMETRIC_PREDICATES = {
     OWL.equivalentClass,
     OWL.equivalentProperty,

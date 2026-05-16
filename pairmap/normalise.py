@@ -1,5 +1,5 @@
 # Label normalisation: lowercase, split CamelCase / snake_case, strip
-punctuation, drop English stopwords. Used by every stage.
+# punctuation, drop English stopwords
 
 
 from __future__ import annotations

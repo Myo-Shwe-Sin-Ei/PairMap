@@ -1,5 +1,4 @@
 # Serialise a list of Mapping objects to turtle
-# Matches the spec's example format using full IRIs and the required predicates
 
 from __future__ import annotations
 
@@ -14,7 +13,6 @@ HEADER = """@prefix owl: <http://www.w3.org/2002/07/owl#> .
 # PairMap alignment
 # Total mappings: {count}
 """
-
 
 def write_alignment(mappings: list[Mapping], out_path: str | Path) -> None:
     # Write mappings to a turtle file with the required predicates
