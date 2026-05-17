@@ -733,3 +733,5 @@ types.py - most of the code
 /script/run_oa3_query.py - results generation
 
 /script/sweep_threshhold.py - most argument path 
+
+Help with formatting of README.md
