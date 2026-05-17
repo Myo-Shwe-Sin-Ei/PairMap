@@ -1,9 +1,0 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-# PairMap alignment
-# Total mappings: 3
-
-<http://www.w3.org/2004/02/skos/core#Concept> owl:equivalentClass <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://ark.frantiq.fr/ark:/26678/pcrt36pke8yWxW> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7222> .
-<https://ark.frantiq.fr/ark:/26678/pcrt1FD59O4eTz> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7258> .

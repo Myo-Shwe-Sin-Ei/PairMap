@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import sys
 import time
+from itertools import combinations
 from pathlib import Path
 
 from .config import TRACK_CONFIG
@@ -40,18 +41,13 @@ def _resolve_track_layout(data_dir: Path) -> tuple[Path, list[Path]]:
     if reference_dir.is_dir():
         ref_files = sorted(reference_dir.glob("*.ttl"))
     elif ontologies_dir is not data_dir:
-        # Bio-ML / KG: refs at top of data_dir
         ref_files = sorted(data_dir.glob("*.ttl"))
     else:
-        # OA.2-style: no separate reference area; the data_dir holds
-        # only ontology files, so any .ttl present would be an artefact
-        # not a gold standard. Treat as "no reference".
         ref_files = []
 
     return ontologies_dir, ref_files
 
 def evaluate_track(track: str, data_root: Path, output_dir: Path) -> dict:
-    # Run PairMap on every pair in `data_root/<track>/` and return a summary
     data_dir = data_root / track
     if not data_dir.is_dir():
         print(f"Missing track folder: {data_dir}", file=sys.stderr)
@@ -156,19 +152,24 @@ def evaluate_track(track: str, data_root: Path, output_dir: Path) -> dict:
 
     ok_rows = [r for r in rows if r.get("ok")]
     eval_rows = [r for r in ok_rows if r.get("F") is not None]
-    macro_f = sum(r["F"] for r in ok_rows) / len(ok_rows) if ok_rows else None
-
+    macro_f = (
+        sum(r["F"] for r in eval_rows) / len(eval_rows) if eval_rows else None
+    )
     # Per-track terminal summary
     print()
     print("=" * 62)
-    print(f"  Track Summary : {track} ({len(ok_rows)}/{len(rows)} pairs OK)")
+    print(f"  TRACK SUMMARY: {track} ({len(ok_rows)}/{len(rows)} pairs OK)")
     print("=" * 62)
-    if ok_rows:
-        best = max(ok_rows, key=lambda r: r["F"])
-        worst = min(ok_rows, key=lambda r: r["F"])
+    if eval_rows:
+        best = max(eval_rows, key=lambda r: r["F"])
+        worst = min(eval_rows, key=lambda r: r["F"])
         print(f"  Macro-mean F   : {macro_f:.4f}")
         print(f"  Best pair      : {best['task']} (F={best['F']:.4f})")
         print(f"  Worst pair     : {worst['task']} (F={worst['F']:.4f})")
+    elif ok_rows:
+        print(f"  No reference alignment — F-score not computed.")
+        print(f"  Mappings produced: "
+              f"{sum(r['M_S'] for r in ok_rows)} across {len(ok_rows)} pairs")
     print(f"  Total time     : {track_time:.1f}s")
     print(f"  Summary table  : {summary_path}")
     print("=" * 62)
