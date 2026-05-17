@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 13
+
+<http://conference#Organization> owl:equivalentClass <http://confOf#Organization> .
+<http://conference#Poster> owl:equivalentClass <http://confOf#Poster> .
+<http://conference#Paper> owl:equivalentClass <http://confOf#Paper> .
+<http://conference#reviews> owl:equivalentProperty <http://confOf#reviewes> .
+<http://conference#has_the_first_name> owl:equivalentProperty <http://confOf#hasFirstName> .
+<http://conference#Workshop> owl:equivalentClass <http://confOf#Workshop> .
+<http://conference#Person> owl:equivalentClass <http://confOf#Person> .
+<http://conference#Conference_www> owl:equivalentClass <http://confOf#Conference> .
+<http://conference#Track-workshop_chair> owl:equivalentClass <http://confOf#Chair_PC> .
+<http://conference#Conference_participant> owl:equivalentClass <http://confOf#Participant> .
+<http://conference#Tutorial> owl:equivalentClass <http://confOf#Tutorial> .
+<http://conference#Topic> owl:equivalentClass <http://confOf#Topic> .
+<http://conference#has_an_email> owl:equivalentProperty <http://confOf#hasEmail> .

@@ -1,0 +1,31 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 25
+
+<http://edas#Review> owl:equivalentClass <http://ekaw#Review> .
+<http://edas#Paper> owl:equivalentClass <http://ekaw#Paper> .
+<http://edas#Document> owl:equivalentClass <http://ekaw#Document> .
+<http://edas#Person> owl:equivalentClass <http://ekaw#Person> .
+<http://edas#ConferenceChair> owl:equivalentClass <http://ekaw#Conference_Participant> .
+<http://edas#RejectedPaper> owl:equivalentClass <http://ekaw#Rejected_Paper> .
+<http://edas#AcceptedPaper> owl:equivalentClass <http://ekaw#Accepted_Paper> .
+<http://edas#Workshop> owl:equivalentClass <http://ekaw#Workshop> .
+<http://edas#Programme> owl:equivalentClass <http://ekaw#Programme_Brochure> .
+<http://edas#Organization> owl:equivalentClass <http://ekaw#Organisation> .
+<http://edas#SocialEvent> owl:equivalentClass <http://ekaw#Social_Event> .
+<http://edas#PublishedPaper> owl:equivalentClass <http://ekaw#Conference_Paper> .
+<http://edas#Presenter> owl:equivalentClass <http://ekaw#Presenter> .
+<http://edas#ConferenceDinner> owl:equivalentClass <http://ekaw#Conference> .
+<http://edas#isWrittenBy> owl:equivalentProperty <http://ekaw#writtenBy> .
+<http://edas#isLocationOf> owl:equivalentProperty <http://ekaw#locationOf> .
+<http://edas#PendingPaper> owl:equivalentClass <http://ekaw#Submitted_Paper> .
+<http://edas#ConferenceEvent> owl:equivalentClass <http://ekaw#Conference_Banquet> .
+<http://edas#AcademicEvent> owl:equivalentClass <http://ekaw#Scientific_Event> .
+<http://edas#hasReviewHistory> owl:equivalentProperty <http://ekaw#hasReview> .
+<http://edas#SessionChair> owl:equivalentClass <http://ekaw#Session_Chair> .
+<http://edas#ActivePaper> owl:equivalentClass <http://ekaw#Industrial_Paper> .
+<http://edas#TPCMember> owl:equivalentClass <http://ekaw#Agency_Staff_Member> .
+<http://edas#PaperPresentation> owl:equivalentClass <http://ekaw#Individual_Presentation> .
+<http://edas#WithdrawnPaper> owl:equivalentClass <http://ekaw#Regular_Paper> .

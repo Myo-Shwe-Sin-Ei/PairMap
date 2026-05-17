@@ -1,10 +1,6 @@
-"""
-Evaluation — Precision, Recall, F-score against a reference alignment in turtle format.
+#Evaluation — Precision, Recall, F-score against a reference alignment in turtle format.
+#We extract the set of (subject, object) pairs from both files and compare
 
-We extract the set of (subject, object) pairs from both files and compare.
-This is a deliberately minimal implementation that matches the spec's
-metric definitions exactly.
-"""
 
 from __future__ import annotations
 

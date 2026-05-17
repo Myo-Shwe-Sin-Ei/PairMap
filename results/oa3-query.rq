@@ -1,0 +1,11 @@
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX wineA: <http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/>
+PREFIX wineB: <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/>
+
+SELECT DISTINCT ?taster ?name WHERE {
+    ?taster rdf:type      wineA:Taster ;
+            wineB:hasName ?name .
+}
+ORDER BY ?name

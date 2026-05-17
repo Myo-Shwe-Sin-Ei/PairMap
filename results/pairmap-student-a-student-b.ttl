@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 14
+
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/SparklingWine> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/SparklingWine> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/StillWine> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/WineType> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/Taster> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Taster> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/CabernetSauvignon> owl:sameAs <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/CabernetSauvignon> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/hasFullName> owl:equivalentProperty <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasName> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/Grape> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GrapeVariety> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/FortifiedWine> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/RedWine> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/Province> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Province> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/WineProduct> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Wine> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/VeryGood> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/GoodQuality> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/WineCountry> owl:equivalentClass <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/Country> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/varietyUsedIn> owl:equivalentProperty <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/usedIn> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/hasRetailPrice> owl:equivalentProperty <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasPrice> .
+<http://www.semanticweb.org/endryu/ontologies/2026/2/Wine_Ontology/hasFullTitle> owl:equivalentProperty <http://www.city.ac.uk/inm713-in3067/2026/myo_shwe_sin_ei/hasTitle> .

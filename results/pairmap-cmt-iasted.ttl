@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 12
+
+<http://cmt#Person> owl:equivalentClass <http://iasted#Person> .
+<http://cmt#Review> owl:equivalentClass <http://iasted#Review> .
+<http://cmt#writtenBy> owl:equivalentProperty <http://iasted#is_writen_by> .
+<http://cmt#date> owl:equivalentProperty <http://iasted#is_dated_on> .
+<http://cmt#assignedTo> owl:equivalentProperty <http://iasted#is_signed_by> .
+<http://cmt#Author> owl:equivalentClass <http://iasted#Author> .
+<http://cmt#ConferenceChair> owl:equivalentClass <http://iasted#Conference_days> .
+<http://cmt#Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+<http://cmt#Document> owl:equivalentClass <http://iasted#Document> .
+<http://cmt#ConferenceMember> owl:equivalentClass <http://iasted#Conference_Hiker> .
+<http://cmt#Co-author> owl:equivalentClass <http://iasted#Author_cd_proceedings_included> .
+<http://cmt#Conference> owl:equivalentClass <http://iasted#Conference_state> .

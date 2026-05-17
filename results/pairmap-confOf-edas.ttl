@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 21
+
+<http://confOf#Reception> owl:equivalentClass <http://edas#Reception> .
+<http://confOf#Organization> owl:equivalentClass <http://edas#Organization> .
+<http://confOf#Country> owl:equivalentClass <http://edas#Country> .
+<http://confOf#Workshop> owl:equivalentClass <http://edas#Workshop> .
+<http://confOf#reviewes> owl:equivalentProperty <http://edas#isReviewedBy> .
+<http://confOf#Social_event> owl:equivalentClass <http://edas#SocialEvent> .
+<http://confOf#Conference> owl:equivalentClass <http://edas#ConferenceEvent> .
+<http://confOf#hasFirstName> owl:equivalentProperty <http://edas#hasFirstName> .
+<http://confOf#writes> owl:equivalentProperty <http://edas#isWrittenBy> .
+<http://confOf#hasPostalCode> owl:equivalentProperty <http://edas#hasPostalCode> .
+<http://confOf#hasPhone> owl:equivalentProperty <http://edas#hasPhone> .
+<http://confOf#hasEmail> owl:equivalentProperty <http://edas#hasEmail> .
+<http://confOf#hasCountry> owl:equivalentProperty <http://edas#hasCountry> .
+<http://confOf#hasStreet> owl:equivalentProperty <http://edas#hasStreet> .
+<http://confOf#hasTopic> owl:equivalentProperty <http://edas#hasTopic> .
+<http://confOf#Paper> owl:equivalentClass <http://edas#Paper> .
+<http://confOf#Person> owl:equivalentClass <http://edas#Person> .
+<http://confOf#Topic> owl:equivalentClass <http://edas#Topic> .
+<http://confOf#Administrative_event> owl:equivalentClass <http://edas#AcademicEvent> .
+<http://confOf#Author> owl:equivalentClass <http://edas#Author> .
+<http://confOf#Member_PC> owl:equivalentClass <http://edas#TPCMember> .

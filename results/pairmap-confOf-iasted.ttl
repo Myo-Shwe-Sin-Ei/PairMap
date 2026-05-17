@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 10
+
+<http://confOf#City> owl:equivalentClass <http://iasted#City> .
+<http://confOf#Banquet> owl:equivalentClass <http://iasted#Dinner_banquet> .
+<http://confOf#writtenBy> owl:equivalentProperty <http://iasted#is_writen_by> .
+<http://confOf#writes> owl:equivalentProperty <http://iasted#write> .
+<http://confOf#Trip> owl:equivalentClass <http://iasted#Tip> .
+<http://confOf#Submission_event> owl:equivalentClass <http://iasted#Submissions_deadline> .
+<http://confOf#Author> owl:equivalentClass <http://iasted#Author> .
+<http://confOf#Conference> owl:equivalentClass <http://iasted#Conference_state> .
+<http://confOf#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+<http://confOf#Person> owl:equivalentClass <http://iasted#Person> .

@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 18
+
+<http://ekaw#Person> owl:equivalentClass <http://iasted#Person> .
+<http://ekaw#Review> owl:equivalentClass <http://iasted#Review> .
+<http://ekaw#writtenBy> owl:equivalentProperty <http://iasted#is_writen_by> .
+<http://ekaw#Conference_Trip> owl:equivalentClass <http://iasted#Conference_activity> .
+<http://ekaw#Conference_Banquet> owl:equivalentClass <http://iasted#Dinner_banquet> .
+<http://ekaw#Session_Chair> owl:equivalentClass <http://iasted#Session_chair> .
+<http://ekaw#Presenter> owl:equivalentClass <http://iasted#Presenter_state> .
+<http://ekaw#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+<http://ekaw#Proceedings> owl:equivalentClass <http://iasted#Author_cd_proceedings_included> .
+<http://ekaw#Conference_Paper> owl:equivalentClass <http://iasted#Conference_state> .
+<http://ekaw#Conference> owl:equivalentClass <http://iasted#Conference_city> .
+<http://ekaw#heldIn> owl:equivalentProperty <http://iasted#is_held_in> .
+<http://ekaw#Session> owl:equivalentClass <http://iasted#Session> .
+<http://ekaw#Conference_Participant> owl:equivalentClass <http://iasted#Conference_restaurant> .
+<http://ekaw#Document> owl:equivalentClass <http://iasted#Document> .
+<http://ekaw#Student> owl:equivalentClass <http://iasted#Student_lecturer> .
+<http://ekaw#Possible_Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+<http://ekaw#Social_Event> owl:equivalentClass <http://iasted#Social_program> .
