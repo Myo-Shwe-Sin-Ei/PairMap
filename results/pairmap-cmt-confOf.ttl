@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 7
+
+<http://cmt#writtenBy> owl:equivalentProperty <http://confOf#writes> .
+<http://cmt#Rejection> owl:equivalentClass <http://confOf#Reception> .
+<http://cmt#Administrator> owl:equivalentClass <http://confOf#Administrator> .
+<http://cmt#Paper> owl:equivalentClass <http://confOf#Paper> .
+<http://cmt#Author> owl:equivalentClass <http://confOf#Author> .
+<http://cmt#Person> owl:equivalentClass <http://confOf#Person> .
+<http://cmt#ConferenceMember> owl:equivalentClass <http://confOf#Conference> .

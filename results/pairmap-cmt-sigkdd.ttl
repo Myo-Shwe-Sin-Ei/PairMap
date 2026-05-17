@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 15
+
+<http://cmt#Person> owl:equivalentClass <http://sigkdd#Person> .
+<http://cmt#Document> owl:equivalentClass <http://sigkdd#Document> .
+<http://cmt#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+<http://cmt#Review> owl:equivalentClass <http://sigkdd#Review> .
+<http://cmt#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+<http://cmt#date> owl:equivalentProperty <http://sigkdd#Date> .
+<http://cmt#name> owl:equivalentProperty <http://sigkdd#Name> .
+<http://cmt#Co-author> owl:equivalentClass <http://sigkdd#Author_of_paper> .
+<http://cmt#email> owl:equivalentProperty <http://sigkdd#E-mail> .
+<http://cmt#Author> owl:equivalentClass <http://sigkdd#Author> .
+<http://cmt#ProgramCommitteeChair> owl:equivalentClass <http://sigkdd#Program_Committee> .
+<http://cmt#ConferenceChair> owl:equivalentClass <http://sigkdd#Conference_hall> .
+<http://cmt#submitPaper> owl:equivalentProperty <http://sigkdd#submit> .
+<http://cmt#ProgramCommitteeMember> owl:equivalentClass <http://sigkdd#Program_Committee_member> .
+<http://cmt#AuthorNotReviewer> owl:equivalentClass <http://sigkdd#Author_of_paper_student> .

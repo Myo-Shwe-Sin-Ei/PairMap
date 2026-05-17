@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 15
+
+<http://conference#Person> owl:equivalentClass <http://sigkdd#Person> .
+<http://conference#Committee> owl:equivalentClass <http://sigkdd#Committee> .
+<http://conference#Program_committee> owl:equivalentClass <http://sigkdd#Program_Committee> .
+<http://conference#Organizing_committee> owl:equivalentClass <http://sigkdd#Organizing_Committee> .
+<http://conference#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+<http://conference#Review> owl:equivalentClass <http://sigkdd#Review> .
+<http://conference#Organization> owl:equivalentClass <http://sigkdd#Organizator> .
+<http://conference#is_submitted_at> owl:equivalentProperty <http://sigkdd#submit> .
+<http://conference#Invited_speaker> owl:equivalentClass <http://sigkdd#Invited_Speaker> .
+<http://conference#Contribution_co-author> owl:equivalentClass <http://sigkdd#Author_of_paper> .
+<http://conference#Abstract> owl:equivalentClass <http://sigkdd#Abstract> .
+<http://conference#Call_for_paper> owl:equivalentClass <http://sigkdd#Paper> .
+<http://conference#Conference_volume> owl:equivalentClass <http://sigkdd#Conference_hall> .
+<http://conference#Contribution_1th-author> owl:equivalentClass <http://sigkdd#Author_of_paper_student> .
+<http://conference#Committee_member> owl:equivalentClass <http://sigkdd#Program_Committee_member> .

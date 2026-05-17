@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# PairMap alignment
+# Total mappings: 14
+
+<http://cmt#Person> owl:equivalentClass <http://edas#Person> .
+<http://cmt#Document> owl:equivalentClass <http://edas#Document> .
+<http://cmt#Review> owl:equivalentClass <http://edas#Review> .
+<http://cmt#Paper> owl:equivalentClass <http://edas#Paper> .
+<http://cmt#Conference> owl:equivalentClass <http://edas#Conference> .
+<http://cmt#ConferenceChair> owl:equivalentClass <http://edas#ConferenceChair> .
+<http://cmt#Rejection> owl:equivalentClass <http://edas#Reception> .
+<http://cmt#ProgramCommittee> owl:equivalentClass <http://edas#Programme> .
+<http://cmt#Reviewer> owl:equivalentClass <http://edas#ReviewForm> .
+<http://cmt#PaperAbstract> owl:equivalentClass <http://edas#ActivePaper> .
+<http://cmt#writtenBy> owl:equivalentProperty <http://edas#isWrittenBy> .
+<http://cmt#PaperFullVersion> owl:equivalentClass <http://edas#PublishedPaper> .
+<http://cmt#Meta-Review> owl:equivalentClass <http://edas#TextualReviewQuestion> .
+<http://cmt#ConferenceMember> owl:equivalentClass <http://edas#ConferenceDinner> .
