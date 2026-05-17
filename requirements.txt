@@ -2,5 +2,4 @@ owlready2>=0.46
 rdflib>=7.0
 rapidfuzz>=3.5
 sentence-transformers>=2.6
-faiss-cpu>=1.7.4
 owlrl>=7.0
